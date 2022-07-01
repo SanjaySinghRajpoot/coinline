@@ -1,0 +1,27 @@
+{
+  "name": "coinline",
+  "version": "1.0.0",
+  "description": "A CLI tool to get the latest crypto prices.",
+  "main": "index.js",
+  "bin": "./bin/coinline.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanjaySinghRajpoot/coinline.git"
+  },
+  "author": "Sanjay Singh Rajpoot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanjaySinghRajpoot/coinline/issues"
+  },
+  "homepage": "https://github.com/SanjaySinghRajpoot/coinline#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0",
+    "commander": "^9.3.0",
+    "configstore": "^6.0.0",
+    "inquirer": "^9.0.0"
+  }
+}
