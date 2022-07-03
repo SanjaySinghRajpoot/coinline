@@ -6,7 +6,7 @@ program
   .description('Check price of coins')
   .option('--coin <type>', 'Add specific coin type', 'Format: ETH, XRP, BTC')
   .option('--cur <currency>', 'Change the currency', 'USD')
-  .action(() => check.price(cmd));
+  .action(cmd => check.price(cmd));
 
 
 program.parse(process.argv);
