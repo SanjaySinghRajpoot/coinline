@@ -30,7 +30,7 @@ export const key = {
 
       return key;
     } catch (error) {
-      console.log("error with your key", error.message.red);
+      console.log("error with your key", error.red);
     }
   },
   remove() {
