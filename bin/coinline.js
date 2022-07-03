@@ -1,10 +1,9 @@
 #!/usr/bin/env node
-const program = require("commander");
-const package = require("../package.json");
+import { program } from "commander";
 
 program
-   .version(package.version)
    .command('key', 'Manage API key -- https://nomics.com')
+   .command('check', 'check for the price')
    .parse(process.argv);
 
 console.log("hello from coinline");

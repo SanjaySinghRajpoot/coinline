@@ -1,5 +1,5 @@
-const  program = require('commander');
-const key = require('../commands/key.js')
+import {program} from 'commander';
+import { key } from '../commands/key.js';
 
 program
    .command('set')

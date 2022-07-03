@@ -1,9 +1,9 @@
-var inquirer = require("inquirer");
-const colors = require("colors");
-const KeyManager = require("../lib/KeyManager.js");
-const { isRequired } = require("../utils/validations.js");
+import inquirer from "inquirer";
+import colors from "colors";
+import  { KeyManager } from "../lib/KeyManager.js";
+import { isRequired } from "../utils/validations.js";
 
-const key = {
+export const key = {
   async set() {
     const keyManager = new KeyManager();
     const input = await inquirer.prompt([
@@ -30,12 +30,21 @@ const key = {
 
       return key;
     } catch (error) {
-      console.log("error with your key");
+      console.log("error with your key", error.message.red);
     }
   },
   remove() {
-    console.log("hello from remove");
+    try {
+      const keyManager = new KeyManager();
+      keyManager.deleteKey();
+
+      console.log("key removed", key.green);
+
+      return;
+    } catch (error) {
+      console.log("error with your key", error.message.red);
+    }
+
   },
 };
 
-module.exports = key;
