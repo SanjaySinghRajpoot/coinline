@@ -10,7 +10,7 @@ export const key = {
       {
         type: "input",
         name: "key",
-        message: "Enter API key".green + "https://nomics.com",
+        message: "Enter API key: ".green + "https://nomics.com",
         validate: isRequired,
       },
     ]);

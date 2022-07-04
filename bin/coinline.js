@@ -6,4 +6,4 @@ program
    .command('check', 'check for the price')
    .parse(process.argv);
 
-console.log("hello from coinline");
+
