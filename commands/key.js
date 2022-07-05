@@ -6,6 +6,8 @@ import { isRequired } from "../utils/validations.js";
 export const key = {
   async set() {
     const keyManager = new KeyManager();
+
+    // prompt to accept the API keys
     const input = await inquirer.prompt([
       {
         type: "input",

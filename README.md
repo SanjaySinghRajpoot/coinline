@@ -31,10 +31,10 @@ coinline key remove
 coinline check price
 
 # Check Specific Coins (default: BTN,ETH,XRP)
-coinline check --coin=BTC,ETH
+coinline check price --coin=BTC,ETH
 
 # Choose Currency (Default: USD)
-coinline check --cur=EUR
+coinline check price --cur=EUR
 
 ```
 
