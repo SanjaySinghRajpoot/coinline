@@ -1,12 +1,10 @@
 # Coinline CLI
 A CLI tool to get the latest crypto prices. 
 
-## Usage
-
-You have to install all the depencies required for this to work properly. Just head to the project directory and run the commands given below. 
+## Installation
 
 ```
-npm install
+npm i crypto-coinline
 ```
 
 You have to add your API keys to use this CLI tool. You can get your API key from https://nomics.com. Once you get the key run `coinline key set` and paste your API key in the cmd line. 
